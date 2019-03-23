@@ -666,3 +666,136 @@ a{
 .list-detail span{
 	color: #777777;
 }
+
+/*========================= Product ================*/
+
+.btn-add{
+	width: 135px;
+	height: 35px;
+	border-radius: 5px;
+	box-shadow: 0 1px 14px rgba(2,2,2,0.2);
+	background: #FF3B30;
+	margin: unset !important;
+	margin-bottom: 10px !important;
+}
+
+.btn-add a{
+	float: left;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 35px;
+	color: #FFF;
+}
+
+.container-makanan{
+	width: 100%;
+	margin-bottom: 20px;
+	height: max-content;
+}
+
+.card{
+	width: calc(100% - 10%);
+	margin: 3% 5%;
+	height: 175px;
+	background: #FFF;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 2px 3px 14px rgba(94, 94, 94, 0.3);
+}
+
+.img-product{
+	height: 100%;
+	overflow: hidden;
+}
+
+.img-product img{
+	width: auto;
+	max-height: 400px;
+	height: 100%;
+}
+
+.desc-product{
+	height: 100%;
+	position: relative;
+}
+
+.desc-product h2{
+	margin-left: 15px;
+	margin-top: 20px;
+	color: #353535;
+	font-family: googleBold;
+}
+
+.desc-product p{
+	margin-left: 15px;
+	font-size: 12px;
+	max-width: 70%;
+	color: #666666;
+}
+
+.desc-product span{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-size: 20px;
+	font-family: googleBold;
+	font-weight: bold;
+	color: #353535;
+}
+
+.pref{
+	padding-top: 5px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pref i{
+	line-height: 40px;
+	color: #8c8c8c;
+}
+
+.pref-active{
+	height: 100px !important;
+}
+
+.pref-list{
+	width: 125px;
+	height: 0;
+	background: #FFF;
+	position: absolute;
+	left: -300%;
+	top: 25px;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: 0.5s ease;
+	box-shadow: 2px 3px 14px rgba(94, 94, 94, 0.3);
+}
+
+.pref-list ul{
+	list-style: none;
+}
+
+.pref-list ul li{
+	width: 100%;
+	height: 50px;
+}
+
+.pref-list ul li a{
+	line-height: 50px;
+	color: #353535;
+	float: left;
+	width: 100%;
+	height: 100%;
+	transition: 0.2s ease;
+}
+
+.pref-list ul li a:hover{
+	background: #E5E5E5;
+}
