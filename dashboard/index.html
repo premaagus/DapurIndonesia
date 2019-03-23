@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dapur Indonesia</title>
+	<title>Dashboard</title>
 	<link rel="stylesheet" href="../css/dashboard.css">
 	<link rel="stylesheet" href="../css/fontawesome.min.css">
 	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="icon" href="../images/logo-red.png">
 	<script src="../js/jquery.js"></script>
 	<script src="../js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 	
@@ -23,7 +24,7 @@
 			<div class="nav-menu">
 				<ul>
 					<li class="active"><a href="#"><i class="fas fa-chart-line"></i></a></li>
-					<li><a href="#"><i class="fas fa-boxes"></i></a></li>
+					<li><a href="product.html"><i class="fas fa-utensils"></i></a></li>
 					<li><a href="#"><i class="fas fa-dolly-flatbed"></i></a></li>
 					<li><a href="#"><i class="fas fa-shipping-fast"></i></a></li>
 				</ul>
@@ -67,80 +68,86 @@
 				<div class="row">
 
 					<div class="col-md-4 col-sm-12">
-						<div class="widget widget-green">
-							<div class="widget-icon">
-								<i class="fas fa-money-check-alt" id="money"></i>
-							</div>
-							<div class="widget-title">
-								<h3>Pemasukan</h3>
-							</div>
-							<div class="widget-value">
-								<span>Rp. 2.000.000</span>
-							</div>
+						<a href="#">
+							<div class="widget widget-green">
+								<div class="widget-icon">
+									<i class="fas fa-money-check-alt" id="money"></i>
+								</div>
+								<div class="widget-title">
+									<h3>Pemasukan</h3>
+								</div>
+								<div class="widget-value">
+									<span>Rp. 2.000.000</span>
+								</div>
 
-							<div class="curency">
-								<span>+ 2.5%</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-12">
-						<div class="widget widget-purple">
-							<div class="widget-icon">
-								<i class="fas fa-utensils"></i>
-							</div>
-							<div class="widget-title">
-								<h3>Menu</h3>
-							</div>
-							<div class="widget-value">
-								<span>15 Item</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-12">
-						<div class="widget widget-blue">
-							<div class="widget-icon">
-								<i class="fas fa-shipping-fast"></i>
-							</div>
-							<div class="widget-title">
-								<h3>Pesanan</h3>
-							</div>
-
-							<div class="widget-value container-pesanan">
-								<div class="row">
-
-									<div class="col-md-4 col-sm-4">
-										<div class="pesanan">
-											<span>10</span>
-										</div>
-										<div class="title-pesanan">
-											<h4>Baru</h4>
-										</div>
-									</div>
-
-									<div class="col-md-4 col-sm-4">
-										<div class="pesanan">
-											<span>5</span>
-										</div>
-										<div class="title-pesanan">
-											<h4>Proses</h4>
-										</div>
-									</div>
-
-									<div class="col-md-4 col-sm-4">
-										<div class="pesanan pesanan-last">
-											<span>32</span>
-										</div>
-										<div class="title-pesanan">
-											<h4>Selesai</h4>
-										</div>
-									</div>
-
+								<div class="curency">
+									<span>+ 2.5%</span>
 								</div>
 							</div>
+						</a>
+					</div>
 
-						</div>
+					<div class="col-md-4 col-sm-12">
+						<a href="#">
+							<div class="widget widget-purple">
+								<div class="widget-icon">
+									<i class="fas fa-utensils"></i>
+								</div>
+								<div class="widget-title">
+									<h3>Menu</h3>
+								</div>
+								<div class="widget-value">
+									<span>15 Item</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-12">
+						<a href="#">
+							<div class="widget widget-blue">
+								<div class="widget-icon">
+									<i class="fas fa-shipping-fast"></i>
+								</div>
+								<div class="widget-title">
+									<h3>Pesanan</h3>
+								</div>
+
+								<div class="widget-value container-pesanan">
+									<div class="row">
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan">
+												<span>10</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Baru</h4>
+											</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan">
+												<span>5</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Proses</h4>
+											</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan pesanan-last">
+												<span>32</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Selesai</h4>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</a>
 					</div>
 
 				</div>
@@ -150,138 +157,307 @@
 						<div class="widget widget-orange chart">
 							<div class="widget-title">
 								<h3>Grafik Pemasukan</h3>
-								<div class="container-chart">
-									<canvas id="myChart"></canvas>
-								</div>
+							</div>
+							<div class="container-chart">
+								<canvas id="myChart"></canvas>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="widget widget-green">
+
+					<div class="col-md-12 col-sm-12">
+						<div class="widget widget-green history">
 							<div class="widget-title">
 								<h3>Riwayat Transaksi</h3>
 							</div>
-							<div class="widget-value history">
+							<div class="container-order">
 								<div class="row">
 
-									<div class="col-md-12">
-										<div class="list-history">
-											<div class="row">
-												<div class="col-md-2">
-													<div class="history-img">
-														<img src="../images/profile1.jpg" alt="">
-													</div>
-												</div>
-												<div class="col-md-4">
-													<div class="history-name">
-														<span>Nasi Ayam Kebuli</span>
-													</div>
-												</div>
-												<div class="col-md-3">
-													<div class="history-name">
-														<span>Prema Agus</span>
-													</div>
-												</div>
-												<div class="col-md-3">
-													<div class="history-status">
-														<span>Pending</span>
-													</div>
-												</div>
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="../images/profile1.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<span>2 Items - </span><span class="order-status biru">Baru</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 220.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
 											</div>
 										</div>
-									</div>
+										<div class="detail-order">
 
-									<div class="col-md-12">
-										<div class="list-history">
-											<div class="row">
+											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="history-img">
-														<img src="../images/profile1.jpg" alt="">
-													</div>
+													<div class="img-detail"></div>
 												</div>
 												<div class="col-md-4">
-													<div class="history-name">
-														<span>Nasi Ayam Kebuli</span>
-													</div>
+													<label>Item</label>
+													<span><a href="#">Ayam Bakar Taliwang</a></span>
 												</div>
-												<div class="col-md-3">
-													<div class="history-name">
-														<span>Prema Agus</span>
-													</div>
-												</div>
-												<div class="col-md-3">
-													<div class="history-status">
-														<span>Pending</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="list-history">
-											<div class="row">
 												<div class="col-md-2">
-													<div class="history-img">
-														<img src="../images/profile1.jpg" alt="">
-													</div>
+													<label>Harga</label>
+													<span>Rp. 50.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
 												</div>
 												<div class="col-md-4">
-													<div class="history-name">
-														<span>Nasi Ayam Kebuli</span>
-													</div>
+													<label>Item</label>
+													<span><a href="#">Ayam Goreng Asam Manis</a></span>
 												</div>
-												<div class="col-md-3">
-													<div class="history-name">
-														<span>Prema Agus</span>
-													</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 40.000</span>
 												</div>
-												<div class="col-md-3">
-													<div class="history-status">
-														<span>Pending</span>
-													</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>3</span>
 												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="../images/profile1.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<span>2 Items - </span><span class="order-status kuning">Diproses</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 220.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
 											</div>
 										</div>
-									</div>
+										<div class="detail-order">
 
-									<div class="col-md-12">
-										<div class="list-history history-last">
-											<div class="row">
+											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="history-img">
-														<img src="../images/profile1.jpg" alt="">
-													</div>
+													<div class="img-detail"></div>
 												</div>
 												<div class="col-md-4">
-													<div class="history-name">
-														<span>Nasi Ayam Kebuli</span>
-													</div>
+													<label>Item</label>
+													<span><a href="#">Ayam Bakar Taliwang</a></span>
 												</div>
-												<div class="col-md-3">
-													<div class="history-name">
-														<span>Prema Agus</span>
-													</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 50.000</span>
 												</div>
-												<div class="col-md-3">
-													<div class="history-status">
-														<span>Pending</span>
-													</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
 												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 40.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>3</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="../images/profile1.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<span>2 Items - </span><span class="order-status hijau">Selesai</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 220.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
 											</div>
 										</div>
-									</div>
+										<div class="detail-order">
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Bakar Taliwang</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 50.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
 
-			</div>
-		</section>
 
-	</div>
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 40.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>3</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="../images/profile1.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<span>2 Items - </span><span class="order-status merah">Ditolak</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 220.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
+											</div>
+										</div>
+										<div class="detail-order">
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Bakar Taliwang</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 50.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail"></div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 40.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>3</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+
+
+								</div><!-- row -->
+							</div><!-- container-order -->
+						</div><!-- Widget -->
+					</div><!-- col-12 Riwayat Transaksi -->
+
+				</div><!-- row-grafik -->
+
+			</div><!-- container-content -->
+		</section><!-- wrapper-content -->
+
+	</div><!-- Wrapper -->
+
+	<script>
+		
+		$(document).ready(function(){
+			$listOrder = $('.list-order');
+
+			$listOrder.click(function(){
+				$(this).siblings('.detail-order').toggleClass('expand-active');
+				$(this).children('.expand').toggleClass('expand-down');
+			});
+		});
+
+	</script>
 
 
 <script>
@@ -452,6 +628,7 @@ $(document).ready(function(){
 	        ]
 	    },
 	    options: {
+	    		maintainAspectRatio: false,
 				responsive: true,
 				title: {
 					display: true,
