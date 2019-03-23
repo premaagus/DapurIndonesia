@@ -226,6 +226,9 @@ p{font-family: google-r}
 	z-index: 0;
 	margin-top: -15px;
 }
+.bg-header .imgmobile{
+	display: none;
+}
 .bg-header .col-md-6{
 	height: 100vh;
 	display: flex;
@@ -498,6 +501,9 @@ p{font-family: google-r}
 .bg-testimoni{
 	width: 100%;
 	height: 100vh;
+}
+.bg-testimoni .main-carousel{
+	display: none;
 }
 .bg-testimoni h1{
 	text-align: center;
@@ -776,4 +782,139 @@ p{font-family: google-r}
 .bottom p .fa-heart{
 	padding: 0 5px;
 	color: #FF3B30;
+}
+
+@media screen and (max-width:500px){
+	/* Navbar */
+	.bg-nav img{
+		width: 200px;
+	}
+	.bg-nav .menu{
+		display: none;
+	}
+
+	/* Header */
+	.bg-header h1{
+		font-size: 30px;
+	}
+	.bg-header .row{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.bg-header .col-md-6{
+		height: max-content;
+		padding-bottom: 100px;
+	}
+	.bg-header .pcright{
+		order: 1;
+	}
+	.bg-header .pcleft{
+		order: 2;
+	}
+	.bg-header .imgpc{
+		display: none;
+	}
+	.bg-header .imgmobile{
+		display: inline;
+		width: 90%;
+		margin: 0;
+		position: relative;
+		right: -50px;
+		top: 50px;
+	}
+
+	/* Tutorial */
+	.bg-tutorial, .bg-tutorial .col-md-6{
+		height: max-content;
+	}
+
+	/* Join */
+	.bg-join, .bg-join .row, .bg-join .col-md-6{
+		height: max-content;
+		padding-bottom: 20px;
+	}
+	.bg-join .row{
+		display: flex;
+		flex-direction: column;
+	}
+	.bg-join .row .left{
+		order: 2;
+	}
+	.bg-join .row .right{
+		order: 1;
+	}	
+
+	/* Testimoni */
+	.bg-testimoni{
+		height: max-content;
+		padding-bottom: 30px;
+	}
+	.bg-testimoni .col-md-4{
+		display: none;
+	}
+	.bg-testimoni .main-carousel{
+		margin-top: 20px;
+		display: inline;
+	}
+	.bg-testimoni .carousel-cell {
+	  width: 100%; /* full width */
+	  height: 520px; /* height of carousel */
+	  margin:0 10px;
+	  box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	  overflow: hidden;
+	  margin-top: 30px;
+	}
+	.bg-testimoni .carousel-cell .img{
+		width: 100%;
+		height: 360px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.bg-testimoni .carousel-cell .img1{background-image: url('../images/testimoni/1.jpg');}
+	.bg-testimoni .carousel-cell .img2{background-image: url('../images/testimoni/2.jpg');}
+	.bg-testimoni .carousel-cell .img3{background-image: url('../images/testimoni/3.jpg');}
+
+	.bg-testimoni p{
+		text-align: center;
+		margin: 20px 0;
+		font-style: italic;
+		padding: 0 10px;
+		color: #A1A1A1;
+	}
+	.bg-testimoni h3{
+		text-align: center;
+	}
+
+	/* App */
+	.bg-app, .bg-app .col-md-7, .bg-app .col-md-5{
+		height: max-content;
+	}
+	.bg-app a img{
+		width: 200px!important;
+	}
+
+	/* About */
+	.bg-about, .bg-about .col-md-6{
+		height: max-content;
+		padding: 30px 0;
+	}
+	.bg-about .max-content{
+		width: 80%
+	}
+
+	/* Footer */
+	.bg-footer{
+		height: max-content;
+	}
+	.bg-footer .max-content{
+		width: 90%;
+	}
+	.bg-footer .about, .bg-footer .menu, .bg-footer .contact, .bg-footer .subs{
+		margin: 20px 0;
+	}
+	.bottom{
+		flex-direction: column;
+	}
 }
