@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product</title>
+	<link rel="stylesheet" href="../css/dashboard.css">
+	<link rel="stylesheet" href="../css/fontawesome.min.css">
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="icon" href="../images/logo-red.png">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="../images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li><a href="#"><i class="fas fa-chart-line"></i></a></li>
+					<li class="active"><a href="product.html"><i class="fas fa-utensils"></i></a></li>
+					<li><a href="#"><i class="fas fa-dolly-flatbed"></i></a></li>
+					<li><a href="#"><i class="fas fa-shipping-fast"></i></a></li>
+				</ul>
+			</div>
+
+		</nav><!-- Side Nav -->
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif"><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="../images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section><!-- Top Nav -->
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="#">Home</a>
+				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<a href="#" class="crumb-active">Product</a>
+			</div>
+		</section><!-- Breadcrumb -->
+
+		<section class="wrapper-content">
+			<div class="container-content">
+				<h1>Tambah Produk</h1>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="widget form-product">
+							<form method="post">
+								<div class="row">
+
+									<div class="col-md-4">
+										<div class="upload-img" >
+											<div class="upload-text">
+												<img src="../images/icon/addImage.png">
+												<h3>Tarik Foto Kesini Atau <span>Cari</span></h3>
+											</div>
+											<div class="upload-success">
+												<img src="../images/icon/checked.png">
+												<h3>Foto Sukses Diupload</h3>
+											</div>
+											<input type="file" name="foto" id="dragZone">
+										</div>
+									</div>
+
+									<div class="col-md-8">
+										<div class="text-form">
+
+											<div class="col-md-12 form-holder">
+												<label>Nama Produk</label>
+												<input type="text">
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Harga Produk</label>
+												<input min="0" class="numberFormat">
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Kategori</label>
+												<label class="container-check">Manis
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Asam
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Asin
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Pedas
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Deskripsi Produk</label>
+												<textarea  rows="6"></textarea>
+											</div>
+
+											<div class="col-md-12">
+												<button class="btn btn-submit btn-merah" type="submit">Tambah</button>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- Container-content -->
+		</section><!-- Wrapper-content -->
+
+
+
+	</div>
+
+	<script>
+
+		$('#dragZone').on('dragenter', function() {
+			$(this).parent().css({'background' : '#EAEAEA'});
+		});
+
+		$('#dragZone').on('dragleave', function() {
+			$(this).parent().css({'background' : 'none'});
+		});
+
+		$('#dragZone').on('mouseover', function() {
+			$(this).parent().css({'background' : '#EAEAEA'});
+		});
+		$('#dragZone').on('mouseleave', function() {
+			$(this).parent().css({'background' : 'none'});
+		});
+
+		$('#dragZone').on('drop', function() {
+			$(this).parent().css({'background' : 'none'});
+			$(this).siblings('.upload-text').remove();
+			$(this).siblings('.upload-success').css({'opacity' : '1'});
+		});
+
+		$('input.numberFormat').keyup(function(event) {
+
+		  // skip for arrow keys
+		  if(event.which >= 37 && event.which <= 40) return;
+
+		  // format number
+		  $(this).val(function(index, value) {
+		    return value
+		    .replace(/\D/g, "")
+		    .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+		    ;
+		  });
+		});
+
+
+	
+	</script>
+
+</body>
+
+</html>
