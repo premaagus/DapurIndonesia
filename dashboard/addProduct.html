@@ -46,7 +46,53 @@
 			</div>
 			<div class="nav-top-menu">
 				<ul>
-					<li class="notif"><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li class="notif">
+						<a href="#">
+							<i class="fas fa-bell"></i>
+						</a>
+						<div class="popup-notif">
+							<div class="list-notif">
+								<div class="col-md-3 icon-notif">
+									<i class="fas fa-dolly-flatbed"></i>
+								</div>
+								<div class="col-md-9 text-notif">
+									<h5>#E4TA425</h5>
+									<span>Orderan Baru</span>
+									<hr>
+								</div>
+							</div>
+							<div class="list-notif">
+								<div class="col-md-3 icon-notif">
+									<i class="fas fa-comment"></i>
+								</div>
+								<div class="col-md-9 text-notif">
+									<h5>Prema Agus</h5>
+									<span>Pesan Baru</span>
+									<hr>
+								</div>
+							</div>
+							<div class="list-notif">
+								<div class="col-md-3 icon-notif">
+									<i class="fas fa-dolly-flatbed"></i>
+								</div>
+								<div class="col-md-9 text-notif">
+									<h5>#E4TA425</h5>
+									<span>Orderan Baru</span>
+									<hr>
+								</div>
+							</div>
+							<div class="list-notif">
+								<div class="col-md-3 icon-notif">
+									<i class="fas fa-comment"></i>
+								</div>
+								<div class="col-md-9 text-notif">
+									<h5>Prema Agus</h5>
+									<span>Pesan Baru</span>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</li>
 					<li>
 						<a href="#">
 							<div class="img-profile">
@@ -178,17 +224,24 @@
 
 	<script>
 
-
-		$('.btn-submit').click(function(event){
-			event.preventDefault();
-			$('.wrapper-alert').css({'transform': 'translateY(0)'});
+		function alertCust(){
+			$('.wrapper-alert').css({'transform': 'translateY(0)', 'opacity': '1'});
+			$('.text-alert').css({'animation': 'text-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both'});
 			$('.alert-loader').css({'width':'0', 'transition':'2s linear'});
+			$('.icon-alert').css({'animation':'bounce 1s ease'});
+
 			setInterval(function(){
 				$('.wrapper-alert').css({'transform': 'translateY(150%)', 'opacity': '0'});
 				setInterval(function(){
 					location.href="product.html";
 				}, 400);
 			}, 2000);
+		}
+
+
+		$('.btn-submit').click(function(event){
+			event.preventDefault();
+			alertCust();
 		});
 
 		$('#dragZone').on('dragenter', function() {
