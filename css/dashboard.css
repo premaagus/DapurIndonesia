@@ -41,6 +41,7 @@ body{
 	margin: 0;
 	font-family: google;
 	background: #F4F7FC;
+	animation: opacity 0.2s ease;
 }
 
 /**{
@@ -156,16 +157,42 @@ a{
 .wrapper{
 	width: 100%;
 	min-height: 1px;
-	height: 175vh;
+	height: auto;
+}
+
+/*======================= Transition Screen ============================*/
+.transition-screen{
+	width: 100%;
+	height: 100vh;
+	background: #F4F7FC;
+	position: fixed;
+	z-index: 55;
+	transition: 1s ease;
+	overflow: hidden;
+}
+
+.loading-wrapper{
+	width: 30vh;
+	height: 30vh;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.loading-wrapper img{
+	width: 100%;
 }
 
 /*======================= Select Option ========================*/
 .dropdown {
-  width: 300px;
+  width: 100%;
   display: inline-block;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 2px rgb(204, 204, 204);
+  border: 1px solid #b2b2b2;
   transition: all .5s ease;
   position: relative;
   font-size: 14px;
@@ -179,7 +206,7 @@ a{
     padding: 10px
 }
 .dropdown .select > i {
-    font-size: 13px;
+    font-size: 10px;
     color: #888;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -199,7 +226,7 @@ a{
     background-color: #f8f8f8
 }
 .dropdown.active .select > i {
-    transform: rotate(-90deg)
+    transform: rotate(90deg)
 }
 .dropdown .dropdown-menu {
     position: absolute;
@@ -240,6 +267,7 @@ a{
 	border-right: 2px solid #F4F4F4;
 	position: fixed;
 	left: 0;
+	z-index: 999;
 }
 
 .nav-clear{
@@ -1063,4 +1091,56 @@ a{
 .btn-merah{
 	background: #ff3b30;
 	color: #FFF;
+}
+
+/*======================= Alert ===================*/
+
+.wrapper-alert{
+	width: 300px;
+	height: 75px;
+	background: #44DB5E;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 5px;
+	transform: translateY(150%);
+	transition: 0.3s ease;
+	overflow: hidden;
+	opacity: 1;
+	box-shadow: 0 1px 14px rgba(50,50,50,0.3);
+}
+
+.icon-alert{
+	line-height: 75px;
+	text-align: center;
+	font-size: 28px;
+	color: white;
+}
+
+.text-alert{
+	text-align: center;
+	line-height: 75px;
+}
+
+.text-alert span{
+	color: white;
+	font-size: 18px;
+}
+
+.alert-loader{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background: #333333;
+}
+
+
+@keyframes opacity{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }

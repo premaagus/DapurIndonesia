@@ -13,6 +13,12 @@
 </head>
 
 <body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="../images/loading.gif">
+		</div>
+	</div>
 	
 	<div class="wrapper">
 		
@@ -96,16 +102,17 @@
 											</div>
 
 											<div class="col-md-12 form-holder">
-												<label>Harga Produk</label>
+												<label>Jenis Produk</label>
 												<div class="dropdown">
 											        <div class="select">
-											          <span>Select Gender</span>
-											          <i class="fa fa-chevron-left"></i>
+											          <span>Pilih Jenis</span>
+											          <i class="fa fa-chevron-right"></i>
 											        </div>
 											        <input type="hidden" name="gender">
 											        <ul class="dropdown-menu">
-											          <li id="male">Male</li>
-											          <li id="female">Female</li>
+											          <li id="Makanan">Makanan</li>
+											          <li id="Minuman">Minuman</li>
+											          <li id="Lainnya">Lainnya</li>
 											        </ul>
 											    </div>
 											</div>
@@ -141,7 +148,7 @@
 											</div>
 
 											<div class="col-md-12">
-												<button class="btn btn-submit btn-merah" type="submit">Tambah</button>
+												<button class="btn btn-submit btn-merah">Tambah</button>
 											</div>
 
 										</div>
@@ -155,11 +162,34 @@
 			</div><!-- Container-content -->
 		</section><!-- Wrapper-content -->
 
-
-
 	</div>
 
+	<div class="wrapper-alert">
+		<div class="col-md-3 icon-alert">
+			<i class="fas fa-check"></i>
+		</div>
+		<div class="col-md-9 text-alert">
+			<span>Sukses Tambah Produk</span>
+		</div>
+		<div class="alert-loader"></div>
+	</div>
+
+	<script src="../js/transition.js"></script>
+
 	<script>
+
+
+		$('.btn-submit').click(function(event){
+			event.preventDefault();
+			$('.wrapper-alert').css({'transform': 'translateY(0)'});
+			$('.alert-loader').css({'width':'0', 'transition':'2s linear'});
+			setInterval(function(){
+				$('.wrapper-alert').css({'transform': 'translateY(150%)', 'opacity': '0'});
+				setInterval(function(){
+					location.href="product.html";
+				}, 400);
+			}, 2000);
+		});
 
 		$('#dragZone').on('dragenter', function() {
 			$(this).parent().css({'background' : '#EAEAEA'});
@@ -184,10 +214,8 @@
 
 		$('input.numberFormat').keyup(function(event) {
 
-		  // skip for arrow keys
 		  if(event.which >= 37 && event.which <= 40) return;
 
-		  // format number
 		  $(this).val(function(index, value) {
 		    return value
 		    .replace(/\D/g, "")
