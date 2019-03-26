@@ -407,6 +407,10 @@ a{
 	position: relative;
 }
 
+.notif a{
+	cursor: pointer;
+}
+
 .notif a:after{
 	content: '';
 	width: 7px;
@@ -420,14 +424,26 @@ a{
 
 .notif-popup{
 	width: 350px;
-	height: max-content;
+	height: auto;
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
 	padding-bottom: 10px;
 	background: #FFF;
 	position: absolute;
 	left: -295px;
 	top: 125%;
+	transform: translateY(5%);
 	border-radius: 5px;
+	transition: 0.5s ease;
 	box-shadow: 0 1px 14px -5px rgba(88,88,88,0.5);
+}
+
+.notif-active{
+	opacity: 1;
+	transform: translateY(0%);
+	max-height: 1000px !important;
+	overflow: visible;
 }
 
 
@@ -740,6 +756,14 @@ a{
 	color: #40a533;
 }
 
+.widget-red{
+	color: #FF3B30;
+}
+
+.widget-red .widget-value{
+	color: #FF3B30;
+}
+
 .widget-purple{
 	color: #6C5CE8;
 }
@@ -787,8 +811,7 @@ a{
 }
 
 .order{
-	margin-bottom: 15px;
-	box-shadow: 0px 3px 10px -5px rgba(0,0,0,0.5);
+	border-bottom: 2px solid rgba(234, 234, 234, 0.5);
 }
 
 .list-order{
@@ -798,7 +821,7 @@ a{
 	cursor: pointer;
 	transition: 0.2s ease;
 	position: relative;
-	background: #F4F7FC;
+	background: #FFF;
 	border-radius: 5px;
 	/*background: #efefef;*/
 }
@@ -831,13 +854,13 @@ a{
 }
 
 .title-order h3{
-	color: #414142;
+	color: #40a533;
 	font-weight: 600;
 	font-family: googleBold;
 }
 
 .title-order h3 b{
-	color: #4cda64;
+	color: #333333;
 	letter-spacing: 0;
 }
 
@@ -892,8 +915,8 @@ a{
 	max-height: 0;
 	float: left;
 	overflow: hidden;
-	background: #F4F7FC;
-	transition: 0.7s cubic-bezier(1,.01,.54,1.01);
+	background: #FFF;
+	transition: 0.7s ease-in;
 }
 
 .list-detail{
@@ -907,6 +930,12 @@ a{
 	width: 50px;
 	height: 50px;
 	background: green;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.img-detail img{
+	height: 100%;
 }
 
 .list-detail label{
@@ -1292,6 +1321,62 @@ a{
 	width: 100%;
 	height: 3px;
 	background: #333333;
+}
+
+/*====================== Transaction =================*/
+.transaction{
+	transition: 0.5s ease;
+}
+.transaction:hover{
+	transform: scale(1.1);
+}
+
+.transaction p{
+	margin-top: 10px;
+}
+
+.transaction-status{
+	width: 75px;
+	height: 25px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.transaction-status span{
+	line-height: 25px;
+	color: white;
+	font-size: 14px;
+}
+
+.status-biru{
+	background: #70A2FF;
+}
+
+.status-kuning{
+	background: #F3A324;
+}
+
+.status-kuning{
+	background: #FFCC00;
+}
+
+.status-hijau{
+	background: #4CDA64;
+}
+
+.status-merah{
+	background: #FF3B30;
+}
+
+.scale{
+	transition: 0.5s ease;
+}
+
+.scale:hover{
+	transform: scale(1.05);
 }
 
 

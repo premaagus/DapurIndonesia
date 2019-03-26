@@ -29,10 +29,9 @@
 
 			<div class="nav-menu">
 				<ul>
-					<li class="active"><a href="#"><i class="fas fa-chart-line"></i></a></li>
-					<li><a href="product.html"><i class="fas fa-utensils"></i></a></li>
-					<li><a href="#"><i class="fas fa-dolly-flatbed"></i></a></li>
-					<li><a href="#"><i class="fas fa-shipping-fast"></i></a></li>
+					<li class="active"><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
 				</ul>
 			</div>
 
@@ -45,7 +44,66 @@
 			</div>
 			<div class="nav-top-menu">
 				<ul>
-					<li class="notif"><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+
+					</li>
 					<li>
 						<a href="#">
 							<div class="img-profile">
@@ -73,28 +131,26 @@
 				<h1>Dashboard</h1>
 				<div class="row">
 
-					<div class="col-md-4 col-sm-12">
-						<a href="#">
-							<div class="widget widget-green">
-								<div class="widget-icon">
-									<i class="fas fa-money-check-alt" id="money"></i>
-								</div>
-								<div class="widget-title">
-									<h3>Pemasukan</h3>
-								</div>
-								<div class="widget-value">
-									<span>Rp. 2.000.000</span>
-								</div>
-
-								<div class="curency">
-									<span>+ 2.5%</span>
-								</div>
+					<div class="col-md-4 col-sm-12 scale">
+						<div class="widget widget-green">
+							<div class="widget-icon">
+								<i class="fas fa-money-check-alt" id="money"></i>
 							</div>
-						</a>
+							<div class="widget-title">
+								<h3>Pemasukan</h3>
+							</div>
+							<div class="widget-value">
+								<span>Rp. 2.000.000</span>
+							</div>
+
+							<div class="curency">
+								<span>+ 2.5%</span>
+							</div>
+						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-12">
-						<a href="#">
+					<div class="col-md-4 col-sm-12 scale">
+						<a href="dashboard-product.html">
 							<div class="widget widget-purple">
 								<div class="widget-icon">
 									<i class="fas fa-utensils"></i>
@@ -109,8 +165,8 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-12">
-						<a href="#">
+					<div class="col-md-4 col-sm-12 scale">
+						<a href="dashboard-transaction.html">
 							<div class="widget widget-blue">
 								<div class="widget-icon">
 									<i class="fas fa-shipping-fast"></i>
@@ -184,7 +240,7 @@
 												<img src="images/profile1.jpg">
 											</div>
 											<div class="title-order">
-												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<h3>#UMP152 - <b>Prema Agus</b></h3>
 												<span>2 Items - </span><span class="order-status biru">Baru</span>
 											</div>
 											<div class="amount-order">
@@ -198,7 +254,9 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/ayamtaliwang.jpg">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
@@ -221,11 +279,13 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/ayambetutu.jpg">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+													<span><a href="#">Ayam Betutu</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
@@ -246,14 +306,14 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="images/profile1.jpg">
+												<img src="images/profile2.jpg">
 											</div>
 											<div class="title-order">
-												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<h3>#M416AR - <b>Ryan Ardito</b></h3>
 												<span>2 Items - </span><span class="order-status kuning">Diproses</span>
 											</div>
 											<div class="amount-order">
-												<span>Rp. 220.000</span>
+												<span>Rp. 130.000</span>
 											</div>
 											<div class="expand">
 												<i class="fas fa-angle-right"></i>
@@ -263,19 +323,21 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/kepiting.png">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Bakar Taliwang</a></span>
+													<span><a href="#">Kepiting Asam Manis</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 50.000</span>
+													<span>Rp. 100.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
-													<span>2</span>
+													<span>1</span>
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
@@ -286,23 +348,25 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/nasigoreng.jpeg">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+													<span><a href="#">Nasi Goreng</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 40.000</span>
+													<span>Rp. 15.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
-													<span>3</span>
+													<span>2</span>
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
-													<span>Rp. 120.000</span>
+													<span>Rp. 30.000</span>
 												</div>
 											</div><!-- List-detail -->
 										</div><!-- Detail Order -->
@@ -311,14 +375,14 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="images/profile1.jpg">
+												<img src="images/profile3.jpg">
 											</div>
 											<div class="title-order">
-												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<h3>#AWM885 - <b>Deva</b></h3>
 												<span>2 Items - </span><span class="order-status hijau">Selesai</span>
 											</div>
 											<div class="amount-order">
-												<span>Rp. 220.000</span>
+												<span>Rp. 180.000</span>
 											</div>
 											<div class="expand">
 												<i class="fas fa-angle-right"></i>
@@ -328,42 +392,46 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/ketoprak.png">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Bakar Taliwang</a></span>
+													<span><a href="#">Ketoprak</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 50.000</span>
+													<span>Rp. 15.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
-													<span>2</span>
+													<span>4</span>
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
-													<span>Rp. 100.000</span>
+													<span>Rp. 60.000</span>
 												</div>
 											</div><!-- List Detail -->
 
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/sopbuntut.jpg">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+													<span><a href="#">Sop Buntut</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 40.000</span>
+													<span>Rp. 30.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
-													<span>3</span>
+													<span>4</span>
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
@@ -376,14 +444,14 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="images/profile1.jpg">
+												<img src="images/profile4.jpg">
 											</div>
 											<div class="title-order">
-												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
+												<h3>#KAR998 - <b>John Smith</b></h3>
 												<span>2 Items - </span><span class="order-status merah">Ditolak</span>
 											</div>
 											<div class="amount-order">
-												<span>Rp. 220.000</span>
+												<span>Rp. 90.000</span>
 											</div>
 											<div class="expand">
 												<i class="fas fa-angle-right"></i>
@@ -393,15 +461,17 @@
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/gudeg.jpg" alt="">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Bakar Taliwang</a></span>
+													<span><a href="#">Gudeg</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 50.000</span>
+													<span>Rp. 15.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
@@ -409,30 +479,32 @@
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
-													<span>Rp. 100.000</span>
+													<span>Rp. 30.000</span>
 												</div>
 											</div><!-- List Detail -->
 
 
 											<div class="list-detail">
 												<div class="col-md-2">
-													<div class="img-detail"></div>
+													<div class="img-detail">
+														<img src="images/food/rendang.jpg">
+													</div>
 												</div>
 												<div class="col-md-4">
 													<label>Item</label>
-													<span><a href="#">Ayam Goreng Asam Manis</a></span>
+													<span><a href="#">Rendang</a></span>
 												</div>
 												<div class="col-md-2">
 													<label>Harga</label>
-													<span>Rp. 40.000</span>
+													<span>Rp. 30.000</span>
 												</div>
 												<div class="col-md-2">
 													<label>Banyaknya</label>
-													<span>3</span>
+													<span>2</span>
 												</div>
 												<div class="col-md-2">
 													<label>Sub-Total</label>
-													<span>Rp. 120.000</span>
+													<span>Rp. 60.000</span>
 												</div>
 											</div><!-- List-detail -->
 										</div><!-- Detail Order -->
@@ -466,6 +538,7 @@
 	</script>
 
 	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
 
 
 <script>
