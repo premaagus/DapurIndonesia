@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Product</title>
-	<link rel="stylesheet" href="../css/dashboard.css">
-	<link rel="stylesheet" href="../css/fontawesome.min.css">
-	<link rel="stylesheet" href="../css/all.min.css">
-	<link rel="icon" href="../images/logo-red.png">
-	<script src="../js/jquery.js"></script>
-	<script src="../js/chart.js"></script>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 
@@ -16,7 +16,7 @@
 
 	<div class="transition-screen">
 		<div class="loading-wrapper">
-			<img src="../images/loading.gif">
+			<img src="images/loading.gif">
 		</div>
 	</div>
 	
@@ -25,12 +25,12 @@
 		<nav class="side-nav">
 			
 			<div class="nav-logo">
-				<img src="../images/logo-red.png">
+				<img src="images/logo-red.png">
 			</div>
 
 			<div class="nav-menu">
 				<ul>
-					<li><a href="#"><i class="fas fa-chart-line"></i></a></li>
+					<li><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
 					<li class="active"><a href="product.html"><i class="fas fa-utensils"></i></a></li>
 					<li><a href="#"><i class="fas fa-dolly-flatbed"></i></a></li>
 					<li><a href="#"><i class="fas fa-shipping-fast"></i></a></li>
@@ -50,53 +50,64 @@
 						<a href="#">
 							<i class="fas fa-bell"></i>
 						</a>
-						<div class="popup-notif">
-							<div class="list-notif">
-								<div class="col-md-3 icon-notif">
-									<i class="fas fa-dolly-flatbed"></i>
-								</div>
-								<div class="col-md-9 text-notif">
-									<h5>#E4TA425</h5>
-									<span>Orderan Baru</span>
-									<hr>
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
 								</div>
 							</div>
-							<div class="list-notif">
-								<div class="col-md-3 icon-notif">
-									<i class="fas fa-comment"></i>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
 								</div>
-								<div class="col-md-9 text-notif">
-									<h5>Prema Agus</h5>
-									<span>Pesan Baru</span>
-									<hr>
-								</div>
-							</div>
-							<div class="list-notif">
-								<div class="col-md-3 icon-notif">
-									<i class="fas fa-dolly-flatbed"></i>
-								</div>
-								<div class="col-md-9 text-notif">
-									<h5>#E4TA425</h5>
-									<span>Orderan Baru</span>
-									<hr>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
 								</div>
 							</div>
-							<div class="list-notif">
-								<div class="col-md-3 icon-notif">
-									<i class="fas fa-comment"></i>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
 								</div>
-								<div class="col-md-9 text-notif">
-									<h5>Prema Agus</h5>
-									<span>Pesan Baru</span>
-									<hr>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
 								</div>
 							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
 						</div>
 					</li>
 					<li>
 						<a href="#">
 							<div class="img-profile">
-								<img src="../images/profile1.jpg">
+								<img src="images/profile1.jpg">
 							</div>
 						</a>
 					</li>
@@ -108,9 +119,9 @@
 		<section class="container-breadcrumb">
 			<div class="breadcrumb">
 				<a href="#">Home</a>
-				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<img class="arrow-crumb" src="images/icon/right.svg">
 				<a href="#">Account</a>
-				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<img class="arrow-crumb" src="images/icon/right.svg">
 				<a href="#" class="crumb-active">Product</a>
 			</div>
 		</section><!-- Breadcrumb -->
@@ -128,11 +139,11 @@
 									<div class="col-md-4">
 										<div class="upload-img" >
 											<div class="upload-text">
-												<img src="../images/icon/addImage.png">
+												<img src="images/icon/addImage.png">
 												<h3>Tarik Foto Kesini Atau <span>Cari</span></h3>
 											</div>
 											<div class="upload-success">
-												<img src="../images/icon/checked.png">
+												<img src="images/icon/checked.png">
 												<h3>Foto Sukses Diupload</h3>
 											</div>
 											<input type="file" name="foto" id="dragZone">
@@ -220,7 +231,7 @@
 		<div class="alert-loader"></div>
 	</div>
 
-	<script src="../js/transition.js"></script>
+	<script src="js/transition.js"></script>
 
 	<script>
 

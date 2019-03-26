@@ -3,22 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dashboard</title>
-	<link rel="stylesheet" href="../css/dashboard.css">
-	<link rel="stylesheet" href="../css/fontawesome.min.css">
-	<link rel="stylesheet" href="../css/all.min.css">
-	<link rel="icon" href="../images/logo-red.png">
-	<script src="../js/jquery.js"></script>
-	<script src="../js/chart.js"></script>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
 	
 	<div class="wrapper">
 		
 		<nav class="side-nav">
 			
 			<div class="nav-logo">
-				<img src="../images/logo-red.png">
+				<img src="images/logo-red.png">
 			</div>
 
 			<div class="nav-menu">
@@ -43,7 +49,7 @@
 					<li>
 						<a href="#">
 							<div class="img-profile">
-								<img src="../images/profile1.jpg">
+								<img src="images/profile1.jpg">
 							</div>
 						</a>
 					</li>
@@ -55,9 +61,9 @@
 		<section class="container-breadcrumb">
 			<div class="breadcrumb">
 				<a href="#">Home</a>
-				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<img class="arrow-crumb" src="images/icon/right.svg">
 				<a href="#">Account</a>
-				<img class="arrow-crumb" src="../images/icon/right.svg">
+				<img class="arrow-crumb" src="images/icon/right.svg">
 				<a href="#" class="crumb-active">Dashboard</a>
 			</div>
 		</section>
@@ -175,7 +181,7 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="../images/profile1.jpg">
+												<img src="images/profile1.jpg">
 											</div>
 											<div class="title-order">
 												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
@@ -240,7 +246,7 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="../images/profile1.jpg">
+												<img src="images/profile1.jpg">
 											</div>
 											<div class="title-order">
 												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
@@ -305,7 +311,7 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="../images/profile1.jpg">
+												<img src="images/profile1.jpg">
 											</div>
 											<div class="title-order">
 												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
@@ -370,7 +376,7 @@
 									<div class="col-md-12 order">
 										<div class="list-order">
 											<div class="profile-cust">
-												<img src="../images/profile1.jpg">
+												<img src="images/profile1.jpg">
 											</div>
 											<div class="title-order">
 												<h3>#4D5F12PUF - <b>Prema Agus</b></h3>
@@ -458,6 +464,8 @@
 		});
 
 	</script>
+
+	<script src="js/transition.js"></script>
 
 
 <script>
