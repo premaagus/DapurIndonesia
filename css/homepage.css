@@ -213,7 +213,7 @@ p{font-family: google-r}
 .bg-nav-color{
 	background-color: #FFF;
 	transition: .5s;
-	box-shadow: 0px 0px 30px 0px rgba(255, 59, 48, 0.5);
+	box-shadow: 0px 0px 14px 0px rgba(88, 88, 88, 0.5);
 }
 .bg-nav-color .active{
 	color: #FF3B30!important;

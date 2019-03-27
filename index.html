@@ -41,7 +41,7 @@
 								<a href="#" class="daftar">Daftar</a>
 								<a href="#" class="line">|</a>
 								<a href="#"><i class="fas fa-search"></i></a>
-								<span onclick="openCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
+								<span onclick="toggleCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
 							</li>
 						</ul>
 					</div>
@@ -79,7 +79,7 @@
 				<div class="cart">
 
 					<div class="bg-judul-cart">
-						<div class="btn-close-c">
+						<div class="btn-close-c" onclick="toggleCart()">
 							<div class="line-close2"></div>
 							<div class="line-close3"></div>
 						</div>
@@ -94,9 +94,9 @@
 						<div class="col-lg-12">
 
 							<div class="isi-cart">
-							<!-- <div class="overlay-isi-cart">
+							<div class="overlay-isi-cart">
 								<h3>Batalkan Produk</h3>
-							</div> -->
+							</div>
 								<div class="col-lg-4">
 									<div class="img-cart">
 										<img src="images/food/satepadang.jpg" width="100%">
@@ -120,9 +120,9 @@
 
 								<div class="col-lg-2">
 									<div class="btn-cart">
-										<button>+</button>
-										<input type="number" name="" value="1" >
-										<button>-</button>
+										<button class="btn-plus">+</button>
+										<input type="number" class="qty" value="1" >
+										<button class="btn-min">-</button>
 									</div>
 								</div>
 
@@ -164,9 +164,9 @@
 
 								<div class="col-lg-2">
 									<div class="btn-cart">
-										<button>+</button>
-										<input type="number" name="" value="1" >
-										<button>-</button>
+										<button class="btn-plus">+</button>
+										<input type="number" class="qty" value="1" >
+										<button class="btn-min">-</button>
 									</div>
 								</div>
 
@@ -196,7 +196,7 @@
 
 						<div class="col-lg-12">
 							<div class="btn-p-checkout">
-								<a href="">Proces to checkout</a>
+								<a href="">Bayar</a>
 							</div>
 						</div>
 
@@ -748,10 +748,31 @@
   </script>
 
   <script type="text/javascript">
-  	function openCart() {
+
+  	$('.btn-plus').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) + 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
+
+  	$('.btn-min').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) - 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
+	
+	$('.btn-hapus').mouseover(function(){
+		$(this).siblings('.overlay-isi-cart').css({'width':'100%'});
+	});
+	$('.btn-hapus').mouseleave(function(){
+		$(this).siblings('.overlay-isi-cart').css({'width':'0'});
+	});
+
+  	function toggleCart() {
 		// body...
 
-		document.getElementById("cart").style.display = "block";
+		// document.getElementById("cart").style.display = "block";
+		$('.wreaper-cart').toggleClass('cart-active');
 	
 
 	}
