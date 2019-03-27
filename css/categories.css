@@ -247,7 +247,7 @@ p{font-family: google-r}
 	position: relative;
 }
 .bg-header .breadcrumb{
-	height: 25vh;
+	height: 40vh;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
