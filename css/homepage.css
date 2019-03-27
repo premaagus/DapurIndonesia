@@ -170,15 +170,17 @@ p{font-family: google-r}
 	list-style: none;
 	cursor: default;
 }
-.bg-nav .menu ul li a{
+.bg-nav .menu ul li a,.bg-nav .menu ul li span{
 	text-decoration: none;
 	font-family: google-m;
 	color: #A1A1A1;
 	margin: 0 8px;
 	font-size: 20px;
 	transition: .3s;
+	cursor: pointer;
 }
-.bg-nav .menu ul li a:hover{
+.bg-nav .menu ul li a:hover,
+.bg-nav .menu ul li span:hover{
 	color: #FFF;
 }
 .bg-nav .menu .line{
