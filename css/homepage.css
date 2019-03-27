@@ -988,10 +988,10 @@ p{font-family: google-r}
 	text-decoration: none;
 	color: #FF3B30;
 	background-color: #FFE9E8;
-	display: block;
+	width: calc(100% - 30px);
 	font-family: google-m;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 0;
 	border-radius: 5px;
 	font-size: 20px;
 }
