@@ -432,6 +432,10 @@ p{font-family: google-r}
 	margin-bottom: 20px;
 	height: max-content;
 }
+.container-makanan .label{
+	color: #707070;
+	padding-left: 30px;
+}
 
 .card{
 	width: calc(100% - 10%);
