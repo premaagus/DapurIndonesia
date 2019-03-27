@@ -1413,6 +1413,10 @@ a{
 	text-align: center;
 }
 
+.logo-data img{
+	width: 100%;
+}
+
 .logo-data svg{
 	color: #777;
 }
@@ -1437,6 +1441,48 @@ a{
 	font-weight: bold;
 	font-family: googleBold;
 	color: #777;
+}
+
+.harga{
+	color: #70A2FF;
+	font-weight: bold;
+	font-family: googleBold;
+}
+
+
+.table-list{
+	width: 100%;
+	height: max-height;
+	background: #FCFCFC;
+	float: left;
+	border-radius: 5px;
+}
+
+.header-table{
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	float: left;
+	border-bottom: 2px solid #EAEAEA;
+}
+
+.header-table span{
+	line-height: 40px;
+	font-weight: bold;
+	font-family: googleBold;
+	color: #333333;
+}
+
+.content-table{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	border-bottom: 2px solid rgba(234, 234, 234, 0.5);
+}
+
+.content-table span{
+	line-height: 40px;
+	color: #777777;
 }
 
 @keyframes opacity{

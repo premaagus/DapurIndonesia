@@ -623,6 +623,13 @@ p{font-family: google-r}
 	color: #707070;
 }
 
+.detail-faq{
+	width: 100%;
+	height: 400px;
+	height: max-content;
+	float: left;
+}
+
 /* App */
 .bg-app{
 	width: 100%;
