@@ -445,6 +445,7 @@ p{font-family: google-r}
 	font-family: google-r;
 	padding-left: 10px;
 	padding-top: 5px;
+	color: #000;
 }
 .bg-categories .carousel-cell h5{
 	color: #A1A1A1;
@@ -510,12 +511,12 @@ p{font-family: google-r}
 }
 .bg-categories .item .cat-item .img1{background-image: url('../images/food/gudeg.jpg');}
 .bg-categories .item .cat-item .img2{background-image: url('../images/food/ayambetutu.jpg');}
-.bg-categories .item .cat-item .img3{background-image: url('../images/food/gudeg.jpg');}
+.bg-categories .item .cat-item .img3{background-image: url('../images/food/ketoprak.png');}
 .bg-categories .item .cat-item .img4{background-image: url('../images/food/ayamgeprek.jpg');}
-.bg-categories .item .cat-item .img5{background-image: url('../images/food/nasigoreng.jpeg');}
-.bg-categories .item .cat-item .img6{background-image: url('../images/food/sopbuntut.jpg');}
-.bg-categories .item .cat-item .img7{background-image: url('../images/food/ayamtaliwang.jpg');}
-.bg-categories .item .cat-item .img8{background-image: url('../images/food/ketoprak.png');}
+.bg-categories .item .cat-item .img5{background-image: url('../images/food/escendol.jpg');}
+.bg-categories .item .cat-item .img6{background-image: url('../images/food/esbuah.jpg');}
+.bg-categories .item .cat-item .img7{background-image: url('../images/food/juicemangga.jpg');}
+.bg-categories .item .cat-item .img8{background-image: url('../images/food/juicepisang.jpg');}
 
 .bg-categories .item .cat-item .text{
 	flex: 1.5;
@@ -737,6 +738,10 @@ p{font-family: google-r}
 }
 .bg-faq .faq-item .answer p{
 	padding: 20px;
+}
+.bg-faq .faq-item .answer p a{
+	text-decoration: underline;
+	color: #FF3B30;
 }
 .bg-faq .faq-item p{
 	margin: 0;
