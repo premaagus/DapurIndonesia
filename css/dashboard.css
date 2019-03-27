@@ -160,33 +160,6 @@ a{
 	height: auto;
 }
 
-/*======================= Transition Screen ============================*/
-.transition-screen{
-	width: 100%;
-	height: 100vh;
-	background: #F4F7FC;
-	position: fixed;
-	z-index: 55;
-	transition: 1s ease;
-	overflow: hidden;
-	z-index: 9;
-}
-
-.loading-wrapper{
-	width: 30vh;
-	height: 30vh;
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-}
-
-.loading-wrapper img{
-	width: 100%;
-}
-
 /*======================= Select Option ========================*/
 .dropdown {
   width: 100%;
@@ -1378,6 +1351,25 @@ a{
 .scale:hover{
 	transform: scale(1.05);
 }
+
+/*============================ Detail Transaction ===================*/
+.widget-transaction .widget-title{
+	margin-bottom: 20px;
+}
+
+.data-holder{
+	height: max-content;
+}
+
+.data-holder label{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: googleBold;
+	color: #333;
+	display: block;
+}
+
+.widget
 
 
 @keyframes opacity{

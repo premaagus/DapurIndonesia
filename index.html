@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/fontawesome.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/flickity.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
 	<link rel="icon" href="images/logo-red.png">
 	<script src="js/jquery.js"></script>
 	<script src="js/chart.js"></script>
@@ -15,6 +16,13 @@
 	<script src="js/navbar.js"></script>
 </head>
 <body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+
 	<section class="bg-nav" id="bg-nav">
 		<div class="max-content">
 			<div class="row">
@@ -450,4 +458,5 @@
         autoPlay: 2500, wrapAround: true
       });
 </script>
+<script src="js/transition.js"></script>
 </html>
