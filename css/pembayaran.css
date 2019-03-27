@@ -587,6 +587,175 @@ p,span{font-family: google-r}
     background: #FFF;
 }
 
+.bungkus-popup-indomaret{
+    width: 400px;
+    height: 650px;
+    margin: auto;
+    background: #dfe6e9;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;  
+    overflow-x: hidden;
+}
+.bg-judul-popup-indomaret{
+    padding: 10px 20px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #dedede;    
+}
+.jdl-kiri-indomaret p{
+    text-align: left;
+    font-size: 1.1em;
+    color: #FF2D55;
+    line-height: 30px;
+    font-family: google-b;
+}
+.jdl-tengah-indomaret p{
+    text-align: left;
+    font-size: 1.1em;
+    margin-left: 10px;
+    line-height: 30px;
+    font-family: google-b;
+}
+.bg-total-indomaret{
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+.total-kiri-indomaret p {
+    float: left;
+    line-height: 20px;
+    font-family: google-m;
+}
+.total-kanan-indomaret p{
+    float: right;
+    line-height: 20px;   
+    font-family: google-m;
+    color: #FF2D55;
+}
+
+.bg-kode-pembayaran-indomaret{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    height: 130px;
+    background: #fff;
+    margin-top: 10px;
+}
+.logo-indomaret img{
+    width: 100%;
+    margin-top: -5px;
+}
+.bg-kode-kanan{
+    padding: 0 10px;
+}
+.bg-judul-kode{
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    border-bottom:1px dashed #dedede;
+    margin-top: 6px;
+    float: right;
+}
+.bg-judul-kode p{
+    float: left;
+    font-family: google-m;
+}
+.bg-kode-indomaret{
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+}
+.bg-kode-indomaret p {
+    color: #5e5e5e;
+    font-size: 0.9em;
+    font-family: google-r;
+}
+.bg-kode-indomaret h2{
+    margin-top: 7px;
+    color: #FF2D55;
+}
+.bg-langkah-indomaret{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 0 auto;
+    height: 300px;
+    background: #fff;
+}
+.bg-judul-langkah{
+    width: 100%;
+    height: 40px;
+    background: #dfe6e9;
+    border-top: 1px solid #b2bec3;
+    border-bottom: 1px solid #b2bec3;
+    padding: 10px 20px;
+    text-align: left;
+}
+.bg-judul-langkah p{
+    color: #5e5e5e;
+    font-size: 0.9em;
+    font-family: google-m;
+}
+.bg-langkah{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.no-langkah{
+    width: 25px;
+    height: 25px;
+    background: #dfe6e9;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+}
+.no-langkah p{
+    line-height: 25px;
+    font-size: 0.8em;
+    color: #5e5e5e;
+}
+.text-langkah{
+    width: 300px;
+    margin: 0 auto;
+    float: left;
+}
+.text-langkah p{
+    font-size: 0.8em;
+    float: left;
+    padding: 3px 15px;
+    text-align: justify;
+    color: #5e5e5e;
+}
+.bg-btn-ok-indomaret{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background: #FF2D55;
+    text-align: center;
+    margin-top: 78px;
+    border: 1px solid #FF2D55;
+    cursor: pointer;
+
+}
+.bg-btn-ok-indomaret a{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.bg-btn-ok-indomaret:hover{
+    background: #fff;
+}
+.bg-btn-ok-indomaret:hover a{
+    color: #FF2D55;
+}
+
 @keyframes zoomFade{
     from{
         transform: scale(0);
