@@ -1357,20 +1357,87 @@ a{
 	margin-bottom: 20px;
 }
 
-.data-holder{
+.widget-transaction{
 	height: max-content;
 }
 
-.data-holder label{
-	font-size: 16px;
-	font-weight: bold;
-	font-family: googleBold;
-	color: #333;
-	display: block;
+.transaction-id h3{
+	letter-spacing: 1px;
+	color: #777777;
+	float: left;
+	margin-bottom: 20px;
 }
 
-.widget
+.status{
+	width: max-content;
+	padding: 5px 25px;
+	float: right;
+	border-radius: 15px;
+	color: #FFF;
+}
 
+.data-holder{
+	width: 50%;
+	height: max-content;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.cust-img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.cust-img img{
+	width: 100%;
+}
+
+.data-holder .col-md-2{
+	position: relative;
+	height: 50px;
+}
+
+.logo-data{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	text-align: center;
+}
+
+.logo-data svg{
+	color: #777;
+}
+
+.label-container{
+	height: 50px;
+	position: relative;
+}
+
+.label-holder{
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: max-content;
+	top: 0;
+	bottom: 0;
+}
+
+.label-holder label{
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: googleBold;
+	color: #777;
+}
 
 @keyframes opacity{
 	from{
