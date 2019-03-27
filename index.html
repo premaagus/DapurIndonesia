@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dapur Indonesia</title>
 	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/chat.css">
+	<link rel="stylesheet" href="css/cart.css">
+
+
 	<link rel="stylesheet" href="css/fontawesome.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/flickity.min.css">
@@ -37,7 +41,7 @@
 								<a href="#" class="daftar">Daftar</a>
 								<a href="#" class="line">|</a>
 								<a href="#"><i class="fas fa-search"></i></a>
-								<a href="#"><i class="fas fa-shopping-cart"></i></a>
+								<span onclick="openCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
 							</li>
 						</ul>
 					</div>
@@ -64,6 +68,216 @@
 			</div>
 		</div><!-- row -->
  	</section><!-- bg-header -->
+
+
+
+ 	
+
+	<section class="bg-cart row" id="cart">
+		<div class="col-lg-12">
+			<div class="wreaper-cart" id="">
+				<div class="cart">
+
+					<div class="bg-judul-cart">
+						<div class="btn-close-c">
+							<div class="line-close2"></div>
+							<div class="line-close3"></div>
+						</div>
+
+						<div class="judul-cart">
+							<h4>Keranjang</h4>
+						</div>
+					</div>
+
+					<div class="dalem-cart">
+
+						<div class="col-lg-12">
+
+							<div class="isi-cart">
+							<!-- <div class="overlay-isi-cart">
+								<h3>Batalkan Produk</h3>
+							</div> -->
+								<div class="col-lg-4">
+									<div class="img-cart">
+										<img src="images/food/satepadang.jpg" width="100%">
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="text-cart">
+										<h4>Sate Gajah Gila</h4>
+										
+										<div class="t-cart">
+											<p><span></span> Extra Pedas </p>
+											<a href="">Detail</a>
+										</div>
+										
+										<!-- <p><a href="">Detail</a></p> -->
+
+										<b>Rp. 15.000</b>
+									</div>
+								</div>
+
+								<div class="col-lg-2">
+									<div class="btn-cart">
+										<button>+</button>
+										<input type="number" name="" value="1" >
+										<button>-</button>
+									</div>
+								</div>
+
+								<div class="btn-hapus">
+									<a href="">
+										<i class="fas fa-times"></i>
+									</a>
+								</div>
+							</div>
+
+						</div><!-- col-lg-12  -->
+
+						<div class="col-lg-12">
+
+							<div class="isi-cart">
+							<div class="overlay-isi-cart">
+								<h3>Batalkan Produk</h3>
+							</div>
+								<div class="col-lg-4">
+									<div class="img-cart">
+										<img src="images/food/satepadang.jpg" width="100%">
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="text-cart">
+										<h4>Sate Gajah Gila</h4>
+										
+										<div class="t-cart">
+											<p><span></span> Extra Pedas </p>
+											<a href="">Detail</a>
+										</div>
+										
+										<!-- <p><a href="">Detail</a></p> -->
+
+										<b>Rp. 15.000</b>
+									</div>
+								</div>
+
+								<div class="col-lg-2">
+									<div class="btn-cart">
+										<button>+</button>
+										<input type="number" name="" value="1" >
+										<button>-</button>
+									</div>
+								</div>
+
+								<div class="btn-hapus">
+									<a href="">
+										<i class="fas fa-times"></i>
+									</a>
+								</div>
+							</div>
+
+						</div><!-- col-lg-12  -->
+
+						<div class="col-lg-12">
+							<div class="bg-total">
+								<h5>Subtotal (2 item)</h5>
+								<p>Rp. 30.000</p>
+								<br>
+
+								<h5>Total Cashback</h5>
+								<p>Rp. 10.000</p>
+								<br>
+								
+								<h3>Cart Subtotal</h3>
+								<h4>Rp. 30.000</h4>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<div class="btn-p-checkout">
+								<a href="">Proces to checkout</a>
+							</div>
+						</div>
+
+					</div><!-- dalem-cart  -->
+					
+				</div><!-- cart  -->
+			</div><!-- wreaper-cart  -->
+		</div><!-- col-lg-12  -->
+	</section><!-- bg-cart  --> 
+
+	<!-- ###### CHATTING-FORM ###### -->
+
+	<div class="icon-chat" onclick="oChat();" id="icon">
+		<img src="images/icon/icon.png">
+	</div>
+
+	<section class="bg-chat" id="myChat">
+		<div class="col-lg-12">
+
+			<div class="col-lg-12">
+			<div class="bg-header-chat" onclick="cChat();">
+				<p>tanyakan kebingunganmu disini</p>
+				<h3>Ask Any Question</h3>
+
+				<img src="images/icon/favicon.png" width="50px">
+			</div>
+			</div><!-- header-chat -->
+			
+			<div class="col-lg-12">
+				<div class="btn-to-chat" id="noChat">
+					<img src="images/icon/icon-chat.png" width="200px">
+					<h3>Ajukan Pertanyaanmu</h3>
+					<p>Klik button dibawah ini untuk memulai pertanyaan</p>
+					<div class="btn-for-chat" onclick="openChat();">
+						<span>Mulai Chat</span>
+					</div>
+				</div>
+			</div><!-- btn-to-chat -->
+		
+			<div class="isi-chat" id="letsChat">
+				<div class="col-lg-12">
+				<div class="chat">
+					<div class="bot-chat" id="bot-chat">
+							
+						<div class="bot-img">
+							<img src="images/logo-red.png" width="100%">
+						</div>
+
+						<div class="chat-admin">
+							<p>Ada yang bisa kami bantu ?</p>
+						</div>
+
+					</div>
+				</div>
+				</div>
+			</div><!-- isi-chat -->
+
+			<div class="col-lg-12">
+			<div class="bg-controls">
+
+				<div class="control">
+					<i class="fas fa-plus"></i>
+					<input type="text" name="" placeholder="Type here to asking anything" id="text">
+					<i class="fas fa-paper-plane" id="send"></i>
+				</div>
+
+				<div class="control-1">
+					<ul>
+						<li><img src="images/icon/camera.png" width="40px"></li>
+						<li><img src="images/icon/image.png" width="40px"></li>
+						<li><img src="images/icon/plus.png" width="40px"></li>
+						<li><img src="images/icon/mic.png" width="40px"></li>
+						<li><img src="images/icon/doc.png" width="40px"></li>
+					</ul>
+				</div>
+			</div>				
+			</div><!-- bg-controls -->
+		
+
+		</div>
+	</section>
 
  	<section class="bg-categories" id="bg-categories">
  		<div class="max-content">
@@ -459,4 +673,87 @@
       });
 </script>
 <script src="js/transition.js"></script>
+
+<!-- ###### SCRIPT-CHATTING-FORM ###### -->
+  <script src="js/jquery.js"></script>
+  <script>
+  	$(document).ready(function(){
+  		//declare var
+  		$textbox = $('#text');
+  		$btn_send = $('#send');
+  		$chat = $('.chat');
+  		$latestChat = $chat.html();
+
+
+  		//Program
+
+  		//When Enter was pressed
+  		$textbox.keypress(function(event){
+  			if (event.which == 13) {
+  				$btn_send.click();
+  			}
+  		});
+
+  		//When btn_send was clicked
+  		$btn_send.click(function(){
+  			$controls = "<div class='our-chat'><div class='img-profile'><div class='acc'></div><div class='img-ppl'></div></div><div class='chat-control'><p>"+ $textbox.val() +"</p></div></div>";
+
+  			$chat.html($latestChat + $controls);
+  			$latestChat = $chat.html();
+  			$chat.scrollTop($chat.prop('scrollHeight'));
+  			$textbox.val("");
+  		});
+
+  	});
+
+  	function oChat() {
+		// body...
+		document.getElementById("icon").style.background = "#555";
+		document.getElementById("icon").style.bottom = "50vh";
+		document.getElementById("icon").style.width = "50px";
+		document.getElementById("icon").style.height = "50px";
+		document.getElementById("icon").style.opacity = "0";
+
+		document.getElementById("myChat").style.transition = ".5s .2s ease-in-out";
+		document.getElementById("myChat").style.right = "0px";
+		document.getElementById("myChat").style.opacity = "1";
+		document.getElementById("noChat").style.animation = "chats .9s ease-in-out";
+
+
+	}
+	function cChat() {
+		// body...
+		document.getElementById("icon").style.background = "#ff3b30";
+		document.getElementById("icon").style.bottom = "50px";
+		document.getElementById("icon").style.width = "70px";
+		document.getElementById("icon").style.height = "70px";
+		document.getElementById("icon").style.opacity = "1";
+
+		document.getElementById("myChat").style.transition = ".5s ease-in-out";
+		document.getElementById("myChat").style.right = "-500px";
+		document.getElementById("myChat").style.opacity = "0";
+	}
+
+  </script>
+
+  <script type="text/javascript">
+  	function openChat() {
+		// body...
+
+		document.getElementById("letsChat").style.display = "block";
+		document.getElementById("noChat").style.display = "none";
+		document.getElementById("bot-chat").style.animation = "chat .5s ease-in-out";
+
+	}
+  </script>
+
+  <script type="text/javascript">
+  	function openCart() {
+		// body...
+
+		document.getElementById("cart").style.display = "block";
+	
+
+	}
+  </script>
 </html>
