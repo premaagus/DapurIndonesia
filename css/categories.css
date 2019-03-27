@@ -244,6 +244,7 @@ p{font-family: google-r}
 	background-image: url('../images/categories/header.png');
 	background-position: center;
 	background-size: 100%;
+	background-repeat: no-repeat;
 	position: relative;
 }
 .bg-header .breadcrumb{
@@ -947,3 +948,4 @@ p{font-family: google-r}
 		font-size: 10px;
 	}
 }
+
