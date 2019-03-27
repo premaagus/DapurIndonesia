@@ -856,6 +856,23 @@ p,span{font-family: google-r}
     color: #777777;
 }
 
+.transaksi-berhasil{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.transaksi-berhasil img{
+    text-align: center;
+    margin: auto;
+}
+
+.transaksi-berhasil h1{
+    font-size: 2.5rem;
+    padding-top: 20px;
+    color: #6ac259;
+}
+
 @keyframes zoomFade{
     from{
         transform: scale(0);
