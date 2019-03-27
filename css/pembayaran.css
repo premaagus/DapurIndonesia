@@ -222,13 +222,35 @@ p,span{font-family: google-r}
 }
 
 .j-check{
-    width: 500px;
+    width: 550px;
     margin: auto;
     position: relative;
 }
 
+.b-kiri{
+    background: url(../images/icon/b-kiri.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+}
+`
+.b-kanan{
+    background: url(../images/icon/b-kanan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+}
+
 .bg-metode-pembayaran{
-    width: 35%;
+    width: 700px;
     margin: 50px auto;
 }
 
@@ -236,7 +258,7 @@ p,span{font-family: google-r}
     text-align: center;
     padding-bottom: 100px;
     position: relative;
-    width: 40%;
+    width: 800px;
 }
 
 
@@ -460,7 +482,7 @@ p,span{font-family: google-r}
 }
 
 .bg-form{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 0;
     height: auto;
@@ -529,7 +551,7 @@ p,span{font-family: google-r}
     padding: 0;
     margin-top: 60px;
     text-align: center;
-    width: 50%;
+    width: 600px;
     position: relative;
 }
 .btn-pembayaran a{
@@ -821,4 +843,40 @@ p,span{font-family: google-r}
         right: 21%;
     }
 
+}
+
+/*  ====== Responsive Laptop (max-width: 960px)  ======*/
+
+@media screen and (max-width: 1366px){
+    .bg-metode-pembayaran {
+        width: 700px;
+        margin: 50px auto;
+    }
+
+}
+
+/*  ====== Responsive Tablet (max-width: 640px)  ======*/
+
+@media screen and (max-width: 640px){
+    .bg-metode-pembayaran {
+        width: 60%;
+        margin: 50px auto;
+    }
+    .indomaret,.kartu-kredit{
+        margin: 10px 0px;
+    }
+    .bg-judul-metode-pembayaran{
+        width: 100%;
+    }
+    .bg-judul-metode-pembayaran h1:after,
+    .bg-judul-metode-pembayaran h1:before{
+        display: none;
+    }
+    .btn-pembayaran:after,
+    .btn-pembayaran:before{
+        display: none;
+    }
+    .bg-btn-pembayaran{
+        width: 100%;
+    }
 }
