@@ -7,6 +7,10 @@
     src: url('../fonts/GoogleSans-Bold.ttf');
 }
 @font-face{
+    font-family: googleBold;
+    src: url('../fonts/GoogleSans-Bold.ttf');
+}
+@font-face{
     font-family: google-r;
     src: url('../fonts/GoogleSans-Regular.ttf');
 }
@@ -481,11 +485,26 @@ p,span{font-family: google-r}
     color: #FF2D55;
 }
 
+.wrapper-step{
+    width: 300vw;
+    overflow: hidden;
+}
+
+.container-form{
+    width: 100vw;
+    float: left;
+    margin-left: 0;
+    transition: .7s ease;
+}
+
+
 .bg-form{
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
+    width: calc(100%);
+    margin: 0;
+    padding: 0 10%;
     height: auto;
+    float: left;
+    display: inline-block;
 }
 .almt .angka{
     border:1px solid #999;
@@ -776,6 +795,192 @@ p,span{font-family: google-r}
 }
 .bg-btn-ok-indomaret:hover a{
     color: #FF2D55;
+}
+
+/*==================== Konfirmasi Pembelian =====================*/
+.widget{
+    width: calc(100% - 60px 30px);
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 14px rgba(94, 94, 94, 0.3);
+    background: #FFF;
+    position: relative;
+    padding: 20px 30px;
+    margin: 15px;
+}
+
+.widget-icon{
+    width: 100%;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.widget-icon i{
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.widget-title{
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 100%;
+    height: max-content;
+}
+
+.widget-title h3{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.widget-value{
+    width: 100%;
+    margin-top: 15px;
+    height: 70px;
+    bottom: 20px;
+}
+
+.widget-value > span{
+    line-height: 70px;
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+/*============================ Detail Transaction ===================*/
+.next{
+    cursor: pointer;
+}
+
+.widget-transaction .widget-title{
+    margin-bottom: 20px;
+}
+
+.widget-transaction{
+    height: max-content;
+    margin-top: 50px;
+}
+
+.transaction-id h3{
+    letter-spacing: 1px;
+    color: #777777;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.status{
+    width: max-content;
+    padding: 5px 25px;
+    float: right;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.data-holder{
+    width: 50%;
+    height: max-content;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.cust-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cust-img img{
+    width: 100%;
+}
+
+.data-holder .col-md-2{
+    position: relative;
+    height: 50px;
+}
+
+.logo-data{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+}
+
+.logo-data img{
+    width: 100%;
+}
+
+.logo-data svg{
+    color: #777;
+}
+
+.label-container{
+    height: 50px;
+    position: relative;
+}
+
+.label-holder{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    bottom: 0;
+}
+
+.label-holder label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: googleBold;
+    color: #777;
+}
+
+.harga{
+    color: #70A2FF;
+    font-weight: bold;
+    font-family: googleBold;
+}
+
+
+.table-list{
+    width: 100%;
+    height: max-height;
+    background: #FCFCFC;
+    float: left;
+    border-radius: 5px;
+}
+
+.header-table{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+.header-table span{
+    line-height: 40px;
+    font-weight: bold;
+    font-family: googleBold;
+    color: #333333;
+}
+
+.content-table{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid rgba(234, 234, 234, 0.5);
+}
+
+.content-table span{
+    line-height: 40px;
+    color: #777777;
 }
 
 @keyframes zoomFade{
