@@ -975,7 +975,7 @@ p{font-family: google-r}
 	margin: 10px 0;
 }
 .bg-login .right .form-group input{
-	width: calc(100% - 30px);
+	width: 100%;
 	margin: 10px 0;
 	padding: 15px;
 	border-radius: 3px;
@@ -988,7 +988,7 @@ p{font-family: google-r}
 	text-decoration: none;
 	color: #FF3B30;
 	background-color: #FFE9E8;
-	width: calc(100% - 30px);
+	display: block;
 	font-family: google-m;
 	text-align: center;
 	padding: 10px 0;
@@ -1067,7 +1067,7 @@ p{font-family: google-r}
 	margin: 10px 0;
 }
 .bg-register .left .form-group input{
-	width: calc(100% - 30px);
+	width: 100%;
 	margin: 10px 0;
 	padding: 15px;
 	border-radius: 3px;
