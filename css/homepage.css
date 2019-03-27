@@ -672,25 +672,29 @@ p{font-family: google-r}
 .bg-testimoni .img2{background-image: url('../images/testimoni/2.jpg');}
 .bg-testimoni .img3{background-image: url('../images/testimoni/3.jpg');}
 .bg-testimoni .testimoni p{
-	padding: 10px 30px; 
+	padding: 0px 30px; 
 	font-style: italic;
 	font-family: google-r;
 	color: #707070;
 	text-align: center;
-	font-size: 15px;
+	font-size: 14px;
 	height: 70px;
+	padding-top: 20px;
 }
 .bg-testimoni .testimoni h3{
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
+	text-transform: capitalize;
+	letter-spacing: 0;
 }
 .bg-testimoni .center p{
-	font-size: 18px;
+	font-size: 16px;
 	height: max-content;
 	padding-top: 20px;
 }
 .bg-testimoni .center h3{
-	font-size: 25px;
+	font-size: 22px;
+	padding-top: 15px;
 }
 
 /* FAQ */
