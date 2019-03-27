@@ -28,6 +28,9 @@
 	</div>
 
 	<section class="bg-nav" id="bg-nav">
+		<div class="btn-burger" onclick="toggleMenu()">
+			<i class="fas fa-bars"></i>
+		</div>
 		<div class="max-content">
 			<div class="row">
 				<div class="col-md-12">
@@ -44,6 +47,22 @@
 								<span onclick="toggleCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
 							</li>
 						</ul>
+					</div>
+					<div class="menu-responsive">
+						<div class="btn-close" onclick="toggleMenu()">
+							<i class="fas fa-times"></i>
+						</div>
+						<div class="responsive-logo">
+							<img src="images/branding-white.png">
+						</div>
+						<div class="list-menu">
+							<ul>
+								<li><a href="#" class="active">Beranda</a></li>
+								<li><a href="#">Kategori</a></li>
+								<li><a href="#">Masuk</a></li>
+								<li><a href="#">Daftar</a></li>
+							</ul>
+						</div>
 					</div>
 				</div><!-- col-md-12 -->
 			</div><!-- row -->
@@ -751,6 +770,15 @@
   </script>
 
   <script type="text/javascript">
+
+ 
+	$('.btn-burger').click(function(){
+		$('.menu-responsive').toggleClass('expand-menu');
+	});
+
+	$('.btn-close').click(function(){
+		$('.menu-responsive').toggleClass('expand-menu');
+	});
 
   	$('.btn-plus').click(function(){
   		$currentVal = $(this).siblings('.qty').val();
