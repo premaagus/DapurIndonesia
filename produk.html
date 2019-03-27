@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/fontawesome.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/flickity.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
 	<link rel="icon" href="images/logo-red.png">
 	<script src="js/jquery.js"></script>
 	<script src="js/chart.js"></script>
@@ -16,6 +17,13 @@
 	<script src="js/navbar.js"></script>
 </head>
 <body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+
 <div class="wreaper">
 	<div class="grid">
 		<section class="bg-nav" id="bg-nav">
@@ -181,9 +189,9 @@
 
 							<div class="button-produk">
 								<div class="responsive-laptop-3 responsive-tablet-12 res-btn">
-									<button><i class="fas fa-minus"></i></button>
-									<input type="text" name="" value="1">
-									<button><i class="fas fa-plus"></i></button>	
+									<button class="btn-min"><i class="fas fa-minus"></i></button>
+									<input type="text" name="" value="1" class="qty">
+									<button class="btn-plus"><i class="fas fa-plus"></i></button>	
 								</div>
 								<div class="responsive-laptop-8 responsive-tablet-12 res-btn">
 									<a href="checkout.html" class="b-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
@@ -335,11 +343,24 @@
 
 	</div><!-- GRID  -->
 </div><!-- WREAPER  -->
+<script src="js/transition.js"></script>
 <script type="text/javascript">
 	$('.carousel').flickity({
         // options
         autoPlay: 2500, wrapAround: true
       });
+
+	$('.btn-plus').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) + 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
+
+  	$('.btn-min').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) - 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
 </script>
 </body>
 </html>
