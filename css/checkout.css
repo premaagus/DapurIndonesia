@@ -212,7 +212,6 @@ p{font-family: google-r}
 }
 
 .isi-detail{
-    border-bottom: 1px solid #999;
     padding:20px 0px 100px 0px;
 }
 
@@ -305,7 +304,7 @@ p{font-family: google-r}
 }
 
 .btn-belanja{
-    margin: 20px 0px;
+    margin: 20px 60px;
     transition: .8s ease-in-out;
     width: 200px;
     cursor: pointer;
@@ -321,10 +320,11 @@ p{font-family: google-r}
     width: 0px;
     position: absolute;
     transition: .5s ease-in-out;
+    margin-top: 10px;
 }
 
 .btn-belanja:hover .line{
-    width: 170px;
+    width: 155px;
     transition: .5s .4s ease-in-out;
 }
 
@@ -348,7 +348,7 @@ p{font-family: google-r}
 }
 
 .check-kanan{
-    height: 550px;
+    height: 500px;
     width: 100%;
     margin-left: 80px;
     padding-top:40px;
@@ -437,7 +437,6 @@ p{font-family: google-r}
     width: 100%;
     box-shadow: 0px 2px 8px rgba(0,0,0,.2);
     margin-top: 10px;
-    cursor: pointer;
 }
 
 .btn-aplly-d{
@@ -477,28 +476,6 @@ p{font-family: google-r}
     margin-top: 4.4px;
 }
 
-/*
-    .btn-aplly-d{
-        margin: 20px 20px;
-        color: #555;
-    }
-
-
-    .btn-aplly-d a{
-        background-color: #f9f9f9;
-        color: #555;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: .05rem;
-        font-size: .9rem;
-    }
-
-
-    .btn-aplly-d i{
-      
-    }
-
-*/
 
 .btn-konfirmasi-d{
     margin: 10px 20px;
@@ -517,54 +494,164 @@ p{font-family: google-r}
     letter-spacing: .05rem;
 }
 
-.batik-atas-1{
-    background: url(../img/batik.png);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 0;
-    top: 0;
+/*  ====== Responsive ++  ======*/
+
+@media screen and (max-width: 1260px){
+    .text-quantity{
+        padding: 28px 0px;
+    }
+
 }
 
-.batik-bawah-1{
-    background: url(../img/batik.png);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 0;
-    bottom: 0;
-    transform: rotate(270deg);
+@media screen and (max-width: 1172px){
+    .isi-detail img{
+        width: 70px;
+        margin-top: 20px;
+    }
+    .text-detail h5{
+        font-size: .8rem;
+    }
 }
 
+/*  ====== Responsive Laptop Mini (max-width: 960px)  ======*/
 
-.batik-atas-2{
-    background: url(../img/batik.png);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: rotate(90deg);
-    right: 0;
-    top: 0;
+@media screen and (max-width: 960px){
+    .judul-check{
+        display: none;
+    }
+    .check-kiri{
+        margin: 0px 50px;
+    }
+    .text-quantity{
+        padding: 28px 0px;
+    }
+    .text-harga{
+        padding: 30px 30px;
+        width: 150%;
+    }
+    .cancel-d{
+        margin-left: 50px;
+    }
+    .check-kiri hr{
+        margin: 10px 130px 10px 0px;
+    }
+    .check-kanan{
+        margin-left: 0px;
+        padding-left: 40px;
+        width: 110%;
+    }
+    .isi-detail img{
+        width: 70px;
+        margin-top: 20px;
+    }
+    .text-detail h5{
+        font-size: .8rem;
+    }
 }
 
-.batik-bawah-2{
-    background: url(../img/batik.png);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    right: 0;
-    bottom: 0;
-    transform: rotate(180deg);
+@media screen and (max-width: 800px){
+    .text-harga{
+        padding: 30px 20px;
+        width: 150%;
+    }
+    .cancel-d{
+        margin-left: 20px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .text-detail {
+        float: left;
+        margin-top: 30px;
+    }
+    .isi-detail img {
+        width: 100px;
+        margin-top: 20px;
+    }
+}
+
+/*  ====== Responsive Tablet (max-width: 640px)  ======*/
+
+@media screen and (max-width: 640px){
+
+    .text-detail h5 {
+        font-size: 1.5rem;
+    }
+    .item-d p:last-child{
+        float: left;
+    }
+    .float-left{
+        float: right !important;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .b-kanan,.b-kiri{
+        display: none;
+    }
+}
+
+/*  ====== Responsive Hp (max-width: 375px)  ======*/
+
+@media screen and (max-width: 375px){
+    .bg-judul-check{
+        margin: 0px;
+    }
+    .j-check{
+         width: 100%;
+    }
+    .b-kiri,.b-kanan{
+        display: none;
+    }
+    .judul-d{
+        display: none;
+    }
+    .text-quantity{
+        padding: 0px 5px;
+    }
+    .text-quantity input{
+        margin-left: 0px;
+    }
+    .text-harga{
+        padding: 0px 10px;
+    }
+    .isi-detail{
+        padding: 0px;
+    }
+    .check-kiri{
+        margin: 80px 20px;
+    }
+    .check-kanan{
+        margin-left: 0px;
+    }
+    .check-kiri hr{
+        display: none;
+    }
+    .cancel-d{
+        margin: 0px auto 50px;
+    }
+    .check-kanan{
+        padding-top: 0px;
+        height: 450px;
+    }
+    .item-d p:last-child{
+        float: left;
+    }
+    .check-kanan hr {
+        width: 90%;
+        margin: auto;
+    }
+    .pengiriman-d select{
+        width: 160%;
+    }
+    .promo-d input{
+        width: 215%;
+    }
+    .btn-belanja{
+        margin: 20px 20px;
+    }
+    .btn-aplly-d{
+        display: none;
+    }
 }
