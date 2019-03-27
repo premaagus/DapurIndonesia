@@ -18,14 +18,26 @@
 	<script src="js/chart.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
 	<script src="js/navbar.js"></script>
+	<script src="js/search.js"></script>
 </head>
 <body>
 
-	<div class="transition-screen">
+	<!-- <div class="transition-screen">
 		<div class="loading-wrapper">
 			<img src="images/loading.gif">
 		</div>
-	</div>
+	</div> -->
+	<div class="bg-search d-flex i-ctr j-ctr">
+		<div class="max-content d-flex j-ctr" style="position: relative;">
+		<a href="#" id="close" ><i class="fas fa-times"></i></a>
+		<div class="search">
+			<div class="form-group">
+				<input type="text" placeholder="Cari makanan atau minuman yang anda inginkan">
+				<a href="halaman/listproduct.html">Cari</a>
+			</div><!-- form-group -->
+		</div><!-- search -->
+		</div>	
+	</div><!-- bg-search -->
 
 	<section class="bg-nav" id="bg-nav">
 		<div class="btn-burger" >
@@ -43,7 +55,7 @@
 								<a href="#">Masuk</a>
 								<a href="#" class="daftar">Daftar</a>
 								<a href="#" class="line">|</a>
-								<a href="#"><i class="fas fa-search"></i></a>
+								<a href="#"><i class="fas fa-search" id="search"></i></a>
 								<span onclick="toggleCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
 							</li>
 						</ul>
@@ -73,8 +85,8 @@
 		<div class="row">
 			<div class="col-md-6 pcleft">
 				<div class="header-left">
-					<h1>Tidak ada yang bisa mengalahkan nikmat <span>masakan</span> rumahan.</h1>
-					<h3>Beli makanan rumahan hanya di <span>DapurIndonesia</span></h3>
+					<h1 class="capt">Tidak ada yang bisa mengalahkan nikmat <span>masakan</span> rumahan.</h1>
+					<h3 class="capt">Beli makanan rumahan hanya di <span>DapurIndonesia</span></h3>
 					<div>
 						<a href="#" class="pesan">Pesan</a>
 						<a href="#bg-categories" class="jelajahi">Jelajahi</a>
@@ -309,7 +321,7 @@
 		                	<div class="img img1">
 
 		                	</div><!-- img -->
-		                	<h3>Kepiting Asam Manis</h3>
+		                	<h3 class="capt">Kepiting Asam Manis</h3>
 		                	<h5>Rp. 150.000</h5>
 		                	<h6>Indah Seafood - Denpasar</h6>
 		                </div><!-- carousel-cell -->
@@ -317,7 +329,7 @@
 		                	<div class="img img6">
 
 		                	</div><!-- img -->
-		                	<h3>Es Teler</h3>
+		                	<h3 class="capt">Es Teler</h3>
 		                	<h5>Rp. 25.000</h5>
 		                	<h6>Es Teler 77 - Makassar</h6>
 		                </div><!-- carousel-cell -->
@@ -325,7 +337,7 @@
 		                	<div class="img img2">
 
 		                	</div><!-- img -->
-		                	<h3>Rendang</h3>
+		                	<h3 class="capt">Rendang</h3>
 		                	<h5>Rp. 40.000</h5>
 		                	<h6>Rumah Makan Padang Sari - Depok</h6>
 		                </div><!-- carousel-cell -->
@@ -333,7 +345,7 @@
 		                	<div class="img img3">
 
 		                	</div><!-- img -->
-		                	<h3>Nasi Kebuli</h3>
+		                	<h3 class="capt">Nasi Kebuli</h3>
 		                	<h5>Rp. 35.000</h5>
 		                	<h6>Kebuli 55 - Semarang</h6>
 		                </div><!-- carousel-cell -->
@@ -341,7 +353,7 @@
 		                	<div class="img img4">
 
 		                	</div><!-- img -->
-		                	<h3>Gado - Gado</h3>
+		                	<h3 class="capt">Gado - Gado</h3>
 		                	<h5>Rp. 20.000</h5>
 		                	<h6>Warung H. Slamet - Surabaya</h6>
 		                </div><!-- carousel-cell -->
@@ -349,7 +361,7 @@
 		                	<div class="img img7">
 
 		                	</div><!-- img -->
-		                	<h3>Es Pisang Ijo</h3>
+		                	<h3 class="capt">Es Pisang Ijo</h3>
 		                	<h5>Rp. 20.000</h5>
 		                	<h6>Warung Bu Hadi - Palembang</h6>
 		                </div><!-- carousel-cell -->
@@ -357,7 +369,7 @@
 		                	<div class="img img5">
 
 		                	</div><!-- img -->
-		                	<h3>Sate Padang</h3>
+		                	<h3 class="capt">Sate Padang</h3>
 		                	<h5>Rp. 150.000</h5>
 		                	<h6>Sate Padang Aju Ramon - Jakarta</h6>
 		                </div><!-- carousel-cell -->
@@ -369,12 +381,12 @@
  						<h1>Kategori</h1>
  					</div><!-- label -->
  					<div class="item">
- 						<h2>Makanan</h2>
+ 						<h2 class="capt">Makanan</h2>
  						<div class="col-md-3 col-m-6">
  							<div class="cat-item">
  								<div class="img img1"></div><!-- img -->
  								<div class="text">
- 									<h4>Manis</h4>
+ 									<h4 class="capt">Manis</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -382,7 +394,7 @@
  							<div class="cat-item">
  								<div class="img img2"></div><!-- img -->
  								<div class="text">
- 									<h4>Gurih</h4>
+ 									<h4 class="capt">Gurih</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -390,7 +402,7 @@
  							<div class="cat-item">
  								<div class="img img3"></div><!-- img -->
  								<div class="text">
- 									<h4>Asam</h4>
+ 									<h4 class="capt">Asam</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -398,16 +410,16 @@
  							<div class="cat-item">
  								<div class="img img4"></div><!-- img -->
  								<div class="text">
- 									<h4>Pedas</h4>
+ 									<h4 class="capt">Pedas</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
- 						<h2>Minuman</h2>
+ 						<h2 class="capt">Minuman</h2>
  						<div class="col-md-3 col-m-6">
  							<div class="cat-item">
  								<div class="img img5"></div><!-- img -->
  								<div class="text">
- 									<h4>Manis</h4>
+ 									<h4 class="capt">Manis</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -415,7 +427,7 @@
  							<div class="cat-item">
  								<div class="img img6"></div><!-- img -->
  								<div class="text">
- 									<h4>Asam</h4>
+ 									<h4 class="capt">Asam</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -423,7 +435,7 @@
  							<div class="cat-item">
  								<div class="img img7"></div><!-- img -->
  								<div class="text">
- 									<h4>Kecut</h4>
+ 									<h4 class="capt">Kecut</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -431,7 +443,7 @@
  							<div class="cat-item">
  								<div class="img img8"></div><!-- img -->
  								<div class="text">
- 									<h4>Pahit</h4>
+ 									<h4 class="capt">Pahit</h4>
  								</div><!-- text -->
  							</div><!-- cat-item -->
  						</div><!-- col-md-3 -->
@@ -449,7 +461,7 @@
 			<div class="col-md-6 flex">
 				<div class="max-content">
 				<div class="wrap-tutor">
-					<h1>Cara Menggunakan <br><span>Dapur Indonesia</span></h1>
+					<h1 class="capt">Cara Menggunakan <br><span>Dapur Indonesia</span></h1>
 					<div class="col-md-6">
 						<div class="tutor-item">
 							<img src="images/icon/placeholder.png">
@@ -488,7 +500,7 @@
  		<div class="max-content">
  			<div class="row">
  				<div class="col-md-6 left">
- 					<h1>Bergabung Bersama <br> <span>Dapur Indonesia</span></h1>
+ 					<h1 class="capt">Bergabung Bersama <br> <span>Dapur Indonesia</span></h1>
  					<p>Mari bergabung bersama <span>Dapur Indonesia</span> untuk memajukan usaha anda ke level berikutnya. Dengan cara klik tombol di bawah ini dan kami akan mengarahkan anda ke pengisian form usaha anda.</p>
  					<div  class="button"><a href="#">Isi Form</a></div>
  				</div><!-- col-md-6 -->
@@ -503,7 +515,7 @@
  		<div class="max-content">
  			<div class="row">
  				<div class="col-md-12">
- 					<h1>Testimoni Pengguna<br><span>Dapur Indonesia</span></h1>
+ 					<h1 class="capt">Testimoni Pengguna<br><span>Dapur Indonesia</span></h1>
  					<div class="main-carousel">
 		             	<div class="carousel" data-flickity>
 			                <div class="carousel-cell">
@@ -564,23 +576,38 @@
  	<section class="bg-faq">
  		<img src="images/homepage/faq.png">
  		<div class="max-content">
- 			<h1>Pertanyaan <br> Yang Sering Diajukan</h1>
+ 			<h1 class="capt">Pertanyaan <br> Yang Sering Diajukan</h1>
  			<div class="row">
  				<div class="col-md-7">
  					<div class="faq-item">
- 						<p>Bisa ga kalau saya batalin pesanan kapanpun ?</p>
- 						<i class="fas fa-angle-right"></i>
- 						<div class="detail-faq">
- 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptates sequi praesentium perspiciatis ut consectetur modi numquam dicta eos fuga repellendus eius esse quibusdam, quam porro neque, reprehenderit, laborum velit!</p>
- 						</div>
+ 						<div class="question">
+ 							<p>Bisa ga kalau saya batalin pesanan kapanpun ?</p>
+ 							<i class="fas fa-angle-right"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+ 						</div><!-- answer -->
  					</div><!-- faq-item -->
  					<div class="faq-item">
- 						<p>Gimana kalau bayar nya itu pas makanan udah sampai ?</p>
- 						<i class="fas fa-angle-right"></i>
+ 						<div class="question">
+ 							<p>Bisa ga kalau saya batalin pesanan kapanpun ?</p>
+ 							<i class="fas fa-angle-right"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+ 						</div><!-- answer -->
  					</div><!-- faq-item -->
  					<div class="faq-item">
- 						<p>Kirim pakai gojek atau grab bias ga sih ?</p>
- 						<i class="fas fa-angle-right"></i>
+ 						<div class="question">
+ 							<p>Bisa ga kalau saya batalin pesanan kapanpun ?</p>
+ 							<i class="fas fa-angle-right"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+ 						</div><!-- answer -->
  					</div><!-- faq-item -->
  				</div><!-- col-md-6 -->
  			</div><!-- row -->
@@ -594,7 +621,7 @@
  			</div><!-- col-md-7 -->
  			<div class="col-md-5 right">
  				<div class="content-right">
- 					<h2>Dapatkan <span>Aplikasi</span></h2>
+ 					<h2 class="capt">Dapatkan <span>Aplikasi</span></h2>
  					<p>Kami akan selalu memudahkan anda dalam memesan makanan. <span>Dapur Indonesia</span> dapat diakses dalam website maupun aplikasi mobile.</p>
  					<a href="#bg-app" id="apple">
  						<img src="images/homepage/apple.png">
@@ -611,7 +638,7 @@
  		<div class="row">
  			<div class="col-md-6 tablet">
  				<div class="max-content">
- 					<h1>Tentang <span>Kami</span></h1>
+ 					<h1 class="capt">Tentang <span>Kami</span></h1>
  					<p><span>Dapur Indonesia</span> adalah sebuah platform untuk memajukan usaha lokal seseorang ke level yang lebih tinggi. Di platform ini seseorang dapat membeli makanan yang telah di iklankan oleh si penjual. Maka, usaha dari si penjual tersebut akan lebih mudah untuk dikenal.</p>
  					<a href="#">Selengkapnya</a>
  				</div><!-- max-content -->
